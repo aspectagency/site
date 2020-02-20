@@ -56,25 +56,26 @@ function sendEmail() {
       },
       success: function(data) {
         $("#submit-btn").html("Submit");
-        //console.log(data);
+        console.log(data);
         var myObj = data;
 
         if (myObj["status"] == "success") {
-          $("#message")
-            .toast("show")
-            .addClass("bg-success")
-            .removeClass("bg-danger bg-warning");
-          $(".toast-body").html(
-            "<strong>" + myObj["status"] + " : </strong> " + myObj["msg"]
-          );
+          console.log("success");
+
+          let alert = document.getElementById("success1");
+          alert.classList.remove("collapse");
+          //$("#succes1").removeClass("collapse");
+
+          setTimeout(() => {
+            $("#success1").addClass("collapse");
+          }, 3000);
         } else if (myObj["status"] == "Error") {
-          $("#message")
-            .toast("show")
-            .addClass("bg-danger")
-            .removeClass("bg-success bg-warning");
-          $(".toast-body").html(
-            "<strong>" + myObj["status"] + " : </strong> " + myObj["msg"]
-          );
+          let alert = document.getElementById("error1");
+          alert.classList.remove("collapse");
+
+          setTimeout(() => {
+            $("#error1").addClass("collapse");
+          }, 3000);
         } else if (myObj["status"] == "Warning") {
           $("#message")
             .toast("show")

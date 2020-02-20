@@ -41,22 +41,22 @@
         <div class="animation-preloader">
           <div class="spinner"></div>
           <div class="txt-loading">
-            <span data-text-preloader="S" class="letters-loading">
+            <span data-text-preloader="A" class="letters-loading">
               A
             </span>
-            <span data-text-preloader="A" class="letters-loading">
+            <span data-text-preloader="S" class="letters-loading">
               S
             </span>
-            <span data-text-preloader="A" class="letters-loading">
+            <span data-text-preloader="P" class="letters-loading">
               P
             </span>
-            <span data-text-preloader="S" class="letters-loading">
+            <span data-text-preloader="E" class="letters-loading">
               E
             </span>
-            <span data-text-preloader="L" class="letters-loading">
+            <span data-text-preloader="C" class="letters-loading">
               C
             </span>
-            <span data-text-preloader="A" class="letters-loading">
+            <span data-text-preloader="T" class="letters-loading">
               T
             </span>
 
@@ -1120,27 +1120,13 @@
                   <button type="button" class="btn_three" onclick="sendEmail()">
                     Send Message
                   </button>
-
-                  <div
-                  id="message"
-                  class="toast text-white shadow-none border-0"
-                  role="alert"
-                  aria-live="assertive"
-                  aria-atomic="true"
-                  data-delay="4000"
-                >
-                  <div class="toast-body d-inline-block"></div>
-                  <button
-                    type="button"
-                    class="pr-3 close"
-                    data-dismiss="toast"
-                    aria-label="Close"
-                  >
+                  <div id="success1" class="alert alert-success collapse">
+                    Your message was succesfully sent!
+                  </div>
+                  <div id="error1">
+                    Opps! something went wrong. Please try again
+                  </div>
                 </form>
-                <div id="success">Your message succesfully sent!</div>
-                <div id="error">
-                  Opps! There is something wrong. Please try again
-                </div>
               </div>
             </div>
           </div>
@@ -1311,9 +1297,8 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/propper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="vendors/wow/wow.min.js"></script>
     <script src="vendors/sckroller/jquery.parallax-scroll.js"></script>
